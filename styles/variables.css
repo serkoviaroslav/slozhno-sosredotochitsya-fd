@@ -1,0 +1,17 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+:root {
+  --background-color: rgba(0, 0, 40, 1);
+  --text-color: rgba(241, 178, 206, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --shadow--color: rgba(255, 0, 112, 1);
+  --decor-color: rgba(255, 0, 112, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --subtitle-color: rgba(0, 0, 40, 1);
+  --content-width: 1440px;
+  --padding: 20px;
+  --gap: 20px;
+  --bg-image: url(../images/cover-image-dark.png);
+}
