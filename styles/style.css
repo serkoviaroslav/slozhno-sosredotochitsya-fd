@@ -233,9 +233,9 @@
 }
 
 .content__link {
-  color: var(--text-colorr, rgba(241, 178, 206, 1));
+  color: var(--text-color, rgba(241, 178, 206, 1));
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shadow--color);
 }
 
 .content__link:hover {
@@ -262,7 +262,7 @@
 }
 
 .main__list-item {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .main__list-item:last-child {
@@ -340,8 +340,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 25px;
+  margin-left: 20px;
   gap: 20px;
 }
 
@@ -350,6 +352,7 @@
   grid-row: 2;
   height: 315px;
   width: 315px;
+  padding-right: 3px;
 }
 
 .street {
@@ -357,7 +360,7 @@
   grid-row: 3;
   height: 433px;
   width: 649px;
-  padding-right: 8px;
+  padding-right: 3px;
 }
 
 .tape {
@@ -365,21 +368,23 @@
   grid-row: 2 / span 3;
   height: 768px;
   width: 320px;
+  padding-right: 3px;
 }
 
 .ice-cream {
   grid-row: 1 / span 2;
   grid-column: 3;
   height: 595px;
-  width: 316px;
-  padding-right: 10px;
+  width: 314px;
+  padding-right: 3px;
 }
 
 .sunset {
   grid-column: span 2;
   grid-row: 1;
   height: 260px;
-  width: 660px;
+  width: 650px;
+  padding-right: 3px;
 }
 
 .footer {
@@ -544,6 +549,8 @@
     gap: 0;
     margin-top: 0;
     padding-bottom: 0;
+    margin-left:0;
+    margin-right:0;
   }
   .tape {
     height: 237px;
@@ -551,6 +558,7 @@
     margin-top: 10px;
     margin-left: 10px;
     order: 3;
+    padding-right: 0;
   }
   .books {
     height: 355px;
@@ -558,6 +566,7 @@
     margin-top: 10px;
     margin-left: 10px;
     order: 4;
+    padding-right: 0;
   }
   .street {
     height: 237px;
@@ -565,6 +574,7 @@
     margin-top: 10px;
     margin-left: 10px;
     order: 5;
+    padding-right: 8px;
   }
   .ice-cream {
     height: 355px;
@@ -572,6 +582,7 @@
     margin-top: 10px;
     margin-left: 10px;
     order: 2;
+    padding-right: 10px;
   }
   .sunset {
     height: 142px;
@@ -579,6 +590,7 @@
     margin-top: 10px;
     margin-left: 10px;
     order: 1;
+    padding-right: 0;
   }
   .main__title {
     margin-left: 0;
@@ -601,21 +613,30 @@
   .main__section:nth-child(3) .main__subtitle {
     margin-left: 10px;
     width: 355px;
-    margin-top: -4px;
+    margin-top: 0;
   }
   .main-content__subtitle {
-    margin-top: 10px;
+    margin-top: 8px;
     width: 355px;
   }
+  .main-content__subtitle:nth-child(1){
+    margin-top: 10px;
+  }
+  .main-content__subtitle:nth-child(3){
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
   .main__paragraf {
     width: 355px;
     line-height: 23.4px;
+    margin-top: -1px;
   }
   .footer__title {
     height: 96px;
     font-size: 116px;
-    padding-top: 60px;
-    margin-bottom: 85px;
+    padding-top: 65px;
+    margin-bottom: 80px;
   }
   .footer__decorated-zone::before {
     bottom: 10px;
@@ -694,7 +715,7 @@
     padding: 20px;
     box-sizing: border-box;
     overflow-x: hidden;
-    padding-top: 55px;
+    padding-top: 60px;
   }
   .main__section:nth-child(1) {
     display: grid;
@@ -760,19 +781,24 @@
     gap: 20px;
     width: 100%;
     padding-bottom: 0;
-    padding-top: 22px;
+    padding-top: 20px;
   }
   .main__paragraf {
     width: 472px;
     height: auto;
     font-weight: 400;
     font-size: 18px;
+    line-height: 23.4px;
   }
   .main__list {
     margin-left: 0px;
   }
   .main__list-item {
-    padding-bottom: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main__list-item:nth-child(4){
+    padding-top: -3px;
   }
   .main-content__subtitle {
     width: 472px;
@@ -782,27 +808,33 @@
     padding: 0;
     margin: 0;
     padding-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 28px;
   }
 
   .books {
     height: 230px;
     width: 230px;
     padding-left: 0px;
+    margin-left: -2px;
   }
   .street {
     height: 318px;
     width: 479px;
     padding-right: 0;
+    margin-top: 8px;
+    margin-left: -4px;
   }
   .tape {
     height: 568px;
     width: 229px;
+    padding-right: 0;
   }
   .ice-cream {
     height: 442px;
     width: 229px;
     padding-right: 0;
+    padding-left: 0;
+    margin-left: -8px;
   }
   .sunset {
     height: 192px;
@@ -812,6 +844,12 @@
   .gallery__content {
     padding-left: 0;
     margin-right: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 10px;
+    padding-top: 20px;
   }
   .gallery__title {
     padding: 0;
@@ -823,6 +861,6 @@
     height: 1024px;
   }
   .footer__title {
-    font-size: 120;
+    font-size: 120px;
   }
 }
