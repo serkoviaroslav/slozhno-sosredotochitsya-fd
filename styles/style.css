@@ -805,8 +805,17 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+  .main__list-item:nth-child(2) {
+    margin-top: -3px;
+  }
+  .main__list-item:nth-child(3) {
+    margin-top: -3px;
+  }
   .main__list-item:nth-child(4) {
-    padding-top: -3px;
+    margin-top: -3px;
+  }
+  .main__list-item:nth-child(5) {
+    margin-top: -3px;
   }
   .main-content__subtitle {
     width: 472px;
@@ -816,25 +825,28 @@
     padding: 0;
     margin: 0;
     padding-top: 5px;
-    padding-bottom: 28px;
+    padding-bottom: 31px;
   }
 
   .books {
     height: 230px;
     width: 230px;
     padding-left: 0px;
-    margin-left: -2px;
+    padding-right: 0;
+    margin-left: 2px;
+    margin-top: 6px;
   }
   .street {
     height: 318px;
     width: 479px;
     padding-right: 0;
     margin-top: 8px;
-    margin-left: -4px;
+    margin-left: 2px;
   }
   .tape {
     height: 568px;
     width: 229px;
+    margin-top: 8px;
     padding-right: 0;
   }
   .ice-cream {
@@ -842,7 +854,7 @@
     width: 229px;
     padding-right: 0;
     padding-left: 0;
-    margin-left: -8px;
+    margin-left: 6px;
   }
   .sunset {
     height: 192px;
@@ -865,6 +877,7 @@
   .footer {
     width: 768px;
     height: 1024px;
+    padding-top: 20px;
   }
   .footer__title {
     font-size: 120px;
