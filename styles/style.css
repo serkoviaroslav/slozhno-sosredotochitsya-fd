@@ -751,7 +751,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 83%;
     letter-spacing: 0;
-    margin-top: 98px;
+    margin-top: 178px;
     margin-left: -20px;
     padding-bottom: 0;
   }
@@ -760,7 +760,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 13px;
-    margin-right: -9px;
+    margin-right: -5px;
   }
   .header__theme-menu {
     grid-column: 3 / 3;
