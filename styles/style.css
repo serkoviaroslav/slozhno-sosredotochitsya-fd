@@ -1,7 +1,6 @@
 .page {
   background-attachment: fixed;
   background-color: var(--background-color);
-  
 }
 
 .header {
@@ -132,7 +131,6 @@
   margin: 0;
   padding: 0;
   position: relative;
-  
 }
 
 .header__title {
@@ -181,7 +179,7 @@
   margin-bottom: 40px;
 }
 
-.section__what{
+.section__what {
   display: block;
   margin-bottom: 40px;
 }
@@ -221,9 +219,14 @@
   margin-left: 12px;
   width: 100%;
 }
-
 .section__what .main__subtitle {
-  max-width: 316px;
+  max-width: none;
+  width: 100%;
+  max-width: 315px;
+}
+
+.section__what .main__text {
+  max-width: none;
   width: 100%;
 }
 
@@ -418,11 +421,10 @@
   padding-right: 0;
 }
 
-.gallery__title{
+.gallery__title {
   background-color: var(--decor-color);
   color: var(--subtitle-color);
 }
-  
 
 .footer {
   width: 100%;
@@ -454,7 +456,7 @@
   width: auto;
 }
 
-.main__section .title-decor{
+.main__section .title-decor {
   padding-right: 10px;
   margin-right: -11px;
 }
@@ -511,9 +513,9 @@
     width: 100%;
     margin-bottom: 295px;
     position: relative;
-    
+
     left: 9px;
-    width: calc(100% + 20px); 
+    width: calc(100% + 20px);
   }
   .main {
     padding-top: 20px;
@@ -528,7 +530,7 @@
     width: 100%;
     max-width: 355px;
   }
-  .section__why{
+  .section__why {
     margin-left: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -553,7 +555,7 @@
     padding: 0;
     min-width: 355px;
   }
-  .section__what .main__text{
+  .section__what .main__text {
     padding: 0;
     min-width: 355px;
     margin-bottom: 22px;
@@ -578,7 +580,7 @@
     line-height: 23.4px;
     margin-top: -1px;
   }
-  .section__what{
+  .section__what {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -587,10 +589,10 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  .gallery{
+  .gallery {
     margin-top: 10px;
   }
-  .section__how{
+  .section__how {
     margin-left: 10px;
     margin-top: 30px;
     padding-top: 0;
@@ -662,10 +664,10 @@
     margin-left: 0;
   }
 
-  .section__how{
+  .section__how {
     margin-left: 0;
   }
-  .section__how .main__content{
+  .section__how .main__content {
     width: 100%;
     max-width: 375px;
     padding-left: 0;
@@ -685,9 +687,9 @@
     margin-left: 10px;
     width: 100%;
     max-width: 375px;
-    margin-top: 0; 
+    margin-top: 0;
   }
-    .section__how .main__text {
+  .section__how .main__text {
     width: 100%;
     max-width: 375px;
     margin-left: 0;
@@ -701,7 +703,7 @@
     line-height: 23.4px;
     margin-top: -3px;
   }
-  
+
   .gallery__title {
     width: 100%;
     max-width: 355px;
@@ -804,15 +806,9 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .section__what{
+  .section__what {
     display: block;
     margin-bottom: 40px;
-  }
-  .section__what .main__section-content {
-    width: 100%;
-    width: 768px;
-    padding: 0;
-    box-sizing: border-box;
   }
   .main__content-list {
     display: flex;
@@ -825,6 +821,14 @@
   .main__content-list-item {
     width: 728px;
     margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .section__what .main__section-content {
+    width: 100%;
+    max-width: 768px;
+    padding: 0;
+    box-sizing: border-box;
   }
   .section__what .main__subtitle {
     width: 728px;
@@ -836,14 +840,33 @@
     margin-left: 0;
     margin-right: 0;
     height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .section__what .main__subtitle {
+    padding: 0;
+    min-width: 728px;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  .section__what .main__text {
+    padding: 0;
+    min-width: 728px;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  .section__what .main__title {
+    margin-bottom: 0px;
+    max-width: 236px;
   }
   .section__how {
     display: grid;
     grid-template-columns: 236px 472px;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     padding-bottom: 0;
-    padding-top: 20px;
+    padding-top: 21px;
   }
   .main__paragraf {
     width: 472px;
@@ -854,13 +877,15 @@
   }
   .main__list {
     margin-left: 0px;
+    gap: 0px;
   }
   .main__list-item {
-    padding-top: 0;
     padding-bottom: 0;
-    margin-left: 0;
+    padding-top: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
-  
+
   .main-content__subtitle {
     width: 472px;
   }
@@ -921,10 +946,21 @@
   }
   .footer {
     width: 768px;
-    height: 1024px;
+    height: auto;
     padding-top: 20px;
   }
   .footer__title {
     font-size: 120px;
+  }
+  .footer {
+    width: 768px;
+    min-height: 1024px; /* Увеличиваем высоту */
+    padding-top: 20px;
+  }
+  .footer .decorated-zone::before {
+    bottom: 20px; /* Добавляем нижний уголок */
+    left: 20px;
+    border-right: none;
+    border-top: none;
   }
 }
