@@ -165,7 +165,7 @@
   margin: 0 auto;
   color: var(--text-color);
   background-color: var(--background-color);
-  padding-top: 63px;
+  padding-top: 40px;
 }
 
 .main__section {
@@ -226,8 +226,8 @@
 }
 
 .section__what .main__text {
-  max-width: none;
   width: 100%;
+  max-width: 315px;
 }
 
 .main-content__subtitle {
@@ -251,11 +251,6 @@
   margin-bottom: 20px;
   margin-top: 1px;
   width: 100%;
-}
-
-.section__what .main__text {
-  width: 100%;
-  max-width: 315px;
 }
 
 .content__link {
@@ -288,29 +283,11 @@
 }
 
 .main__list-item {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
-
-.main__list-item:last-child {
+.main__list-item:last-child{
   margin-bottom: 0;
 }
-
-.main__list-item:nth-child(2) {
-  margin-top: 0px;
-}
-
-.main__list-item:nth-child(3) {
-  margin-top: 0px;
-}
-
-.main__list-item:nth-child(4) {
-  margin-top: 0px;
-}
-
-.main__list-item:nth-child(5) {
-  margin-top: 0px;
-}
-
 .main__section-content {
   display: flex;
   flex-direction: column;
@@ -331,7 +308,8 @@
   font-size: 18px;
   font-weight: 400;
   font-family: "IBM Plex Mono", monospace;
-  margin-top: 10px;
+  margin-top: 0;
+  line-height: 23.4px;
 }
 
 .main__content-list-item {
@@ -340,7 +318,7 @@
 }
 
 .gallery {
-  margin-top: 41px;
+  margin-top: 0px;
   padding-bottom: 40px;
   width: auto;
 }
@@ -351,6 +329,8 @@
   font-weight: 700;
   width: 984px;
   margin-left: 20px;
+  background-color: var(--decor-color);
+  color: var(--subtitle-color);
 }
 
 .gallery__image {
@@ -421,10 +401,6 @@
   padding-right: 0;
 }
 
-.gallery__title {
-  background-color: var(--decor-color);
-  color: var(--subtitle-color);
-}
 
 .footer {
   width: 100%;
@@ -510,10 +486,8 @@
     right: 11px;
   }
   .header__text {
-    width: 100%;
     margin-bottom: 295px;
     position: relative;
-
     left: 9px;
     width: calc(100% + 20px);
   }
@@ -593,7 +567,7 @@
     margin-top: 10px;
   }
   .section__how {
-    margin-left: 10px;
+    margin-left: 0;
     margin-top: 30px;
     padding-top: 0;
     margin-bottom: 0;
@@ -663,10 +637,6 @@
   .main__title {
     margin-left: 0;
   }
-
-  .section__how {
-    margin-left: 0;
-  }
   .section__how .main__content {
     width: 100%;
     max-width: 375px;
@@ -675,11 +645,6 @@
   }
   .section__how .main__subtitle {
     margin-left: 10px;
-    width: 100%;
-    max-width: 375px;
-  }
-  .section__how .main__text {
-    margin-left: 0;
     width: 100%;
     max-width: 375px;
   }
@@ -698,10 +663,10 @@
     line-height: 23.4px;
   }
   .section__how .main__paragraf {
-    width: 100%;
+    
     width: 375px;
     line-height: 23.4px;
-    margin-top: -3px;
+    margin-top: 0x;
   }
 
   .gallery__title {
@@ -822,7 +787,7 @@
     width: 728px;
     margin: 0 auto;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 22px;
   }
   .section__what .main__section-content {
     width: 100%;
@@ -831,30 +796,21 @@
     box-sizing: border-box;
   }
   .section__what .main__subtitle {
-    width: 728px;
     margin-left: 0;
     margin-right: 0;
-  }
-  .section__what .main__text {
-    width: 728px;
-    margin-left: 0;
-    margin-right: 0;
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 0;
-  }
-  .section__what .main__subtitle {
     padding: 0;
     min-width: 728px;
     width: 100%;
     margin-bottom: 7px;
   }
   .section__what .main__text {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 22px;
+    margin: 0;
     padding: 0;
     min-width: 728px;
-    width: 100%;
-    margin-bottom: 22px;
   }
   .section__what .main__title {
     margin-bottom: 0px;
@@ -880,10 +836,7 @@
     gap: 0px;
   }
   .main__list-item {
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .main-content__subtitle {
@@ -944,21 +897,17 @@
     width: 728px;
     margin: 0;
   }
-  .footer {
-    width: 768px;
-    height: auto;
-    padding-top: 20px;
-  }
   .footer__title {
     font-size: 120px;
   }
   .footer {
     width: 768px;
-    min-height: 1024px; /* Увеличиваем высоту */
+    min-height: 1024px;
     padding-top: 20px;
+    height: auto;
   }
   .footer .decorated-zone::before {
-    bottom: 20px; /* Добавляем нижний уголок */
+    bottom: 20px;
     left: 20px;
     border-right: none;
     border-top: none;
