@@ -537,6 +537,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 355px;
+    white-space: normal;
   }
   .section__what .main__subtitle {
     padding: 0;
@@ -656,12 +657,13 @@
     width: 100%;
     max-width: 375px;
     margin-top: 20px;
+    white-space: normal;
   }
   .section__how .main__title {
     width: 100%;
-    margin-left: 0;
+    margin-left: 10px;
     margin-top: 0;
-    white-space: nowrap;
+    white-space: normal;
   }
   .section__how .main__text {
     width: 100%;
@@ -674,7 +676,6 @@
     width: 375px;
     margin-top: 0;
   }
-
   .gallery__title {
     width: 100%;
     max-width: 355px;
@@ -707,6 +708,7 @@
     top: 50px;
     right: 10px;
   }
+  
 }
 
 @media (376px < width <= 769px) {
