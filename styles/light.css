@@ -36,10 +36,6 @@
   }
 }
 
-.theme-light .rec {
-  display: none;
-}
-
 @media (prefers-color-scheme: light) {
   .rec {
     display: none;
