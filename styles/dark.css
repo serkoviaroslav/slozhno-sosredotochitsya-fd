@@ -35,9 +35,3 @@
     display: flex;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .rec {
-    display: flex;
-  }
-}
